@@ -1,31 +1,238 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:200,300&display=swap");
 
-$color-light-red:#FF4E50;
-$color-yellowish-orange: #FFA710;
+$color-light-red: #ff4e50;
+$color-yellowish-orange: #ffa710;
 $color-brownish-grey: #666666;
-$color-darker-grey:#444444;
-$color-cornflower: #667DF3;
-$color-very-light-grey: #F7F3F2;
-$color-aqua: #19D4CA;
-$color-white: #FFFFFF;
-$color-very-light-pink:#E3E3E3;
+$color-darker-grey: #444444;
+$color-cornflower: #667df3;
+$color-very-light-grey: #f7f3f2;
+$color-aqua: #19d4ca;
+$color-white: #ffffff;
+$color-very-light-pink: #e3e3e3;
 
-body{
+$font-montserrat: "Montserrat";
+$font-roboto: "Roboto";
+
+body {
   margin: 0px;
-  
+
   .banner {
     position: relative;
     text-align: center;
+    font-family: $font-montserrat;
+    font-weight: 700;
+    color: $color-white;
+
+    .siteName {
+      position: absolute;
+      top: 8px;
+      left: 15%;
+    }
+    .log-in {
+      position: absolute;
+      top: 8px;
+      right: 15%;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      align-content: space-between;
+      .btn {
+        background: transparent;
+        color: $color-white;
+        border-color: 1px solid;
+        border-radius: 10px;
+      }
+    }
+    .main-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      align-items: center;
+      span {
+        font-size: 40px;
+      }
+      .small-text {
+        font-family: $font-roboto;
+        font-weight: 300;
+        font-size: 16px;
+      }
+      button {
+        background: $color-light-red;
+        color: $color-white;
+        border-radius: 20px;
+        border-color: $color-light-red;
+        padding: 8px 15px;
+        width: fit-content;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .content {
+    margin: 0px 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    .steps {
+      margin: auto;
+      position: relative;
+
+      div {
+        position: absolute;
+        bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-size: 15px;
+
+        button {
+          background: $color-light-red;
+          border-color: $color-light-red;
+          color: white;
+          border-radius: 20px;
+          width: fit-content;
+          font-weight: 200;
+        }
+        .step-header {
+          font-weight: 700;
+          font-size: 18px;
+          font-family: $font-montserrat;
+          color: $color-white;
+        }
+        .step-desc {
+          font-weight: 200;
+          font-size: 10px;
+          font-family: $font-montserrat;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .partners {
+    .partner-content {
+      max-width: 25%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .header-partner {
+        font-size: 16px;
+        color: $color-darker-grey;
+        font-weight: 700;
+        font-family: $font-montserrat;
+      }
+      .desc-partner {
+        font-size: 16px;
+        color: $color-darker-grey;
+        font-weight: 300;
+        font-family: $font-montserrat;
+      }
+    }
+    .btn-partners {
+      background: transparent;
+      color: $color-light-red;
+      border-radius: 20px;
+      border-color: $color-light-red;
+      padding: 8px 15px;
+      width: fit-content;
+      font-weight: 700;
+      display: flex;
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+
+  .holiday {
+    margin-bottom: 10%;
+
+    .interest-text{
+      font-size: 16px;
+      font-family: $font-roboto;
+      color: $color-darker-grey;
+      font-weight: 200;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .search {
+      justify-content: center;
+
+      .content-search {
+        .input{
+          margin: 0px 12px;
+          border: none;
+          border: solid 1px $color-very-light-grey;
+          border-radius: 2px;
+          padding: 8px;
+          width: 300px;
+        }
+        button {
+          background: $color-light-red;
+          color: $color-white;
+          border-radius: 20px;
+          border-color: $color-light-red;
+          padding: 8px 15px;
+          width: fit-content;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  footer {
+    .column-1 {
+      color: $color-light-red;
+      font-family: $font-montserrat;
+      font-weight: 300;
+    }
+    .column-2,
+    .column-3 {
+      color: $color-darker-grey;
+      font-family: $font-montserrat;
+      font-weight: 200;
+
+      .f-title {
+        font-weight: 700;
+      }
+    }
+    .column-4 {
+      align-items: flex-end;
+      font-family: $font-montserrat;
+      font-size: 10px;
+      color: $color-brownish-grey;
+    }
   }
 }
-.flex-row{
-  display: flex; 
-  flex-direction:row;
-}
-
-.flex-column{
+.flex-row {
   display: flex;
-  flex-direction:column;
+  flex-direction: row;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 
+.title {
+  font-family: $font-montserrat;
+  color: $color-darker-grey;
+  font-weight: 700;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background: $color-light-red;
+  border-color: transparent;
+}
+.flex-grow {
+  flex-grow: 1;
+}
