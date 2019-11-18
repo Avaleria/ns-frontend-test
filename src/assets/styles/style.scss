@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300&display=swap');
+
+$color-light-red:#FF4E50;
+$color-yellowish-orange: #FFA710;
+$color-brownish-grey: #666666;
+$color-darker-grey:#444444;
+$color-cornflower: #667DF3;
+$color-very-light-grey: #F7F3F2;
+$color-aqua: #19D4CA;
+$color-white: #FFFFFF;
+$color-very-light-pink:#E3E3E3;
+
+body{
+  margin: 0px;
+  
+  .banner {
+    position: relative;
+    text-align: center;
+  }
+}
+.flex-row{
+  display: flex; 
+  flex-direction:row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction:column;
+}
+
+
