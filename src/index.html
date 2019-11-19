@@ -1,174 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DREAMSHARE</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
-<body>
-        <div class="banner">
-            <img src="/img/backgroundBitmap.png" alt="backgroundBitmap">
-            <div>
-                <span class="siteName">DREAMSHARE</span>
-                <div class="log-in flex-row">
-                    <span>Log in</span>
-                    <button class="btn">Sign up</button>
-                </div>
-                <div class="main-text flex-column">
-                    <span>SHARE YOUR</span>
-                    <span>HOLIDAY DREAM</span>
-                    <span class="small-text">And find the perfect partner to fullfill it</span>
-                    <button>Find your holiday partners</button>
-                </div>
 
+<body>
+    <div class="header banner">
+        <div>
+            <span class="siteName">DREAMSHARE</span>
+            <div class="log-in flex-row">
+                <span>Log in</span>
+                <button class="btn">Sign up</button>
+            </div>
+            <div class="main-text flex-column">
+                <span>SHARE YOUR</span>
+                <span>HOLIDAY DREAM</span>
+                <span class="small-text">And find the perfect partner to fullfill it</span>
+                <button>Find your holiday partners</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+        <!--how it works-->
+        <div class="flex-column">
+            <span class="title">How it works?</span>
+            <div id="step-container" class="flex-row wrap">
             </div>
         </div>
-        <div class="content">
-            <!--how it works-->
-            <div class="flex-column">
-                <span class="title">How it works?</span>
-                <div class="flex-row wrap">
-                    <div class="steps">
-                        <img src="/img/steps/Step1.png" alt="step1"> 
-                        <div>
-                            <button>STEP 1</button>
-                            <span class="step-header">Sed leo enim, condimentum</span>
-                            <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                        </div>
-                    </div>
-                    <div class="steps">
-                        <img src="/img/steps/Step2.png" alt="step2"> 
-                        <div>
-                            <button>STEP 2</button>
-                            <span class="step-header">Sed leo enim, condimentum</span>
-                            <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                        </div>
-                    </div>
-                    <div class="steps">
-                        <img src="img/steps/Step3.png" alt="step3"> 
-                        <div>
-                            <button>STEP 3</button>
-                            <span class="step-header">Sed leo enim, condimentum</span>
-                            <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                        </div>
-                    </div>
-                </div>                
+        <!--meet partners-->
+        <div class="partners flex-column">
+            <span class="title">Meet a partner for your best?</span>
+            <div class="flex-row wrap">
+                <div id="partner-container" class="container__row"></div>
             </div>
-            <!--meet partners-->
-            <div class="partners flex-column" >
-                <span class="title">Meet a partner for your best?</span>
-                <div class="flex-row wrap">
-                    <div class="partner-content">
-                        <img src="/img/partners/bradley.png" alt="Bradley" style="display: block;margin: auto;"> 
-                        <span class="header-partner">Bradley Hunter</span>
-                        <span class="desc-partner">Based in Chicago. I love playing tennis and loud music</span>
+            <button class="btn-partners">See other partners</button>
+        </div>
+        <!--discover-->
+        <div class="flex-column">
+            <span class="title">Discover holiday activity</span>
+            <div class="container">
+                <div class="container__row">
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
+                        <img src="/img/activities/Sports.png" alt="step1">
                     </div>
-                    <div class="partner-content">
-                        <img src="/img/partners/marie.png" alt="marie" style="display: block;margin: auto;"> 
-                        <span class="header-partner">Bradley Hunter</span>
-                        <span class="desc-partner">Based in Chicago. I love playing tennis and loud music</span>
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
+                        <img src="/img/activities/Wellness.png" alt="step2">
                     </div>
-                    <div class="partner-content">
-                        <img src="/img/partners/diana.png" alt="diana" style="display: block;margin: auto;"> 
-                        <span class="header-partner">Bradley Hunter</span>
-                        <span class="desc-partner">Based in Chicago. I love playing tennis and loud music</span>
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
+                        <img src="/img/activities/Extreme.png" alt="step3">
                     </div>
-                    <div class="partner-content">
-                        <img src="/img/partners/cristopher.png" alt="cristopher" style="display: block;margin: auto;"> 
-                        <span class="header-partner">Bradley Hunter</span>
-                        <span class="desc-partner">Based in Chicago. I love playing tennis and loud music</span>
-                    </div>
-                </div>
-                <button class="btn-partners">See other partners</button>
-            </div>
-            <!--discover-->
-            <div class="flex-column">
-                <span class="title">Discover holiday activity</span>
-                <div class="flex-column">
-                    <div class="flex-row wrap">
-                            <div class="steps">
-                                <img src="/img/activities/Sports.png" alt="step1"> 
-                                <div>
-                                    <button>STEP 1</button>
-                                    <span class="step-header">Sed leo enim, condimentum</span>
-                                    <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                                </div>
-                            </div>
-                            <div class="steps">
-                                <img src="/img/activities/Wellness.png" alt="step2"> 
-                                <div>
-                                    <button>STEP 2</button>
-                                    <span class="step-header">Sed leo enim, condimentum</span>
-                                    <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                                </div>
-                            </div>
-                            <div class="steps">
-                                <img src="/img/activities/Extreme.png" alt="step3"> 
-                                <div>
-                                    <button>STEP 3</button>
-                                    <span class="step-header">Sed leo enim, condimentum</span>
-                                    <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                                </div>
-                            </div>
-                    </div>   
-                </div>
-                <div class="flex-column">
-                    <div class="flex-row wrap">
-                            <div class="steps">
-                                <img src="/img/activities/Games.png" alt="step1"> 
-                                <div>
-                                    <button>STEP 1</button>
-                                    <span class="step-header">Sed leo enim, condimentum</span>
-                                    <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                                </div>
-                            </div>
-                            <div style="flex-grow: 2;" class="steps">
-                                <img src="/img/activities/Culture.png" alt="step3"> 
-                                <div>
-                                    <button>STEP 3</button>
-                                    <span class="step-header">Sed leo enim, condimentum</span>
-                                    <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                                </div>
-                            </div>
-                    </div>   
-                </div>
-                <div class="flex-column">
-                    <div class="flex-row wrap">
-                        <div style="flex-grow: 2;" class="steps">
-                            <img src="/img/activities/enjoymentRelaxation.png" alt="step1"> 
-                            <div>
-                                <button>STEP 1</button>
-                                <span class="step-header">Sed leo enim, condimentum</span>
-                                <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                            </div>
-                        </div>
-                        <div  class="steps">
-                            <img src="/img/activities/Traveling.png" alt="step3"> 
-                            <div>
-                                <button>STEP 3</button>
-                                <span class="step-header">Sed leo enim, condimentum</span>
-                                <span class="step-desc">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</span>
-                            </div>
-                        </div>
-                    </div>   
                 </div>
             </div>
-            <!--create holiday-->
-            <div class="flex-column holiday">
-                <span class="title">Create your holiday</span>
-                <span class="interest-text">Hi! What are your holiday interests?</span>
-                <div class="flex-row wrap search">
-                    <div class="content-search">
-                        <input placeholder="Enter your interests" class="flex-grow input"></input>
-                        <button class="">Search partners</button>
+            <div class="container">
+                <div class="container__row">
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
+                        <img src="/img/activities/Games.png" alt="step1">
+                    </div>
+                    <div class="container__col-sm-12 container__col-md-8 container__col-lg-8">
+                        <img src="/img/activities/Culture.png" alt="step3">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container__row">
+                    <div class="container__col-sm-12 container__col-md-8 container__col-lg-8">
+                        <img src="/img/activities/enjoymentRelaxation.png" alt="step1">
+                    </div>
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
+                        <img src="/img/activities/Traveling.png" alt="step3">
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
-    </body>
+        <!--create holiday-->
+        <div class="flex-column holiday">
+            <span class="title">Create your holiday</span>
+            <span class="interest-text">Hi! What are your holiday interests?</span>
+            <div class="flex-row wrap search">
+                <div class="content-search">
+                    <input placeholder="Enter your interests" class="flex-grow input"></input>
+                    <button class="">Search partners</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
     <footer class="flex-row wrap content">
         <div class="column-1 flex-grow">
             <span>DREAMSHARE</span>
@@ -187,9 +109,13 @@
         <div class="flex-grow column-3">
             <span class="f-title">Partners</span>
         </div>
-        <div class="flex-column flex-grow column-4"> 
+        <div class="flex-column flex-grow column-4">
             <span>DESIGNED BY</span>
-            <img src="/img/main/areto.png" height="24" width="110" alt="ARETO"/>
+            <img src="/img/main/areto.png" height="24" width="110" alt="ARETO" />
         </div>
     </footer>
+
+    <script src="./scripts/app.js"></script>
+</body>
+
 </html>
