@@ -10,111 +10,116 @@
 </head>
 
 <body>
-    <div class="header banner">
-        <div>
-            <span class="siteName">DREAMSHARE</span>
-            <div class="log-in flex-row">
-                <span>Log in</span>
-                <button class="btn">Sign up</button>
+    <!--header-->
+    <div class="container">
+        <img src="/img/backgroundBitmap.png" class="gradient" alt="DREAMSHARE">
+        <div class="top header-container container__row container__col-sm-12">
+            <h2 class="brand container__col-sm-12 container__col-md-6 container__col-lg-6">DREAMSHARE</h2>
+            <div class="log-in container__col-sm-12 container__col-md-6 container__col-lg-6">
+                <div>
+                    <span>Log in</span>
+                    <button class="btn">Sign up</button>
+                </div>
             </div>
-            <div class="main-text flex-column">
-                <span>SHARE YOUR</span>
-                <span>HOLIDAY DREAM</span>
-                <span class="small-text">And find the perfect partner to fullfill it</span>
-                <button>Find your holiday partners</button>
-            </div>
-
+        </div>
+        <div class="centered container__row flex-column container__col-sm-12">
+            <h2>SHARE YOUR</h2>
+            <h2>HOLIDAY DREAM</h2>
+            <span class="small-text">And find the perfect partner to fullfill it</span>
+            <button>Find your holiday partners</button>
         </div>
     </div>
+    <!--content-body-->
     <div class="content">
         <!--how it works-->
-        <div class="flex-column">
-            <span class="title">How it works?</span>
-            <div id="step-container" class="flex-row wrap">
+        <div class="container__row">
+            <span class="section-header">How it works?</span>
+            <div id="step-container" class="flex-row container__row">
             </div>
         </div>
         <!--meet partners-->
-        <div class="partners flex-column">
-            <span class="title">Meet a partner for your best?</span>
-            <div class="flex-row wrap">
-                <div id="partner-container" class="container__row"></div>
+        <div class="container__row">
+            <span class="section-header">Meet a partner for your best?</span>
+            <div id="partner-container" class="flex-row  container__row">
             </div>
-            <button class="btn-partners">See other partners</button>
+            <button class="btn-partners container__row">See other partners</button>
         </div>
         <!--discover-->
-        <div class="flex-column">
-            <span class="title">Discover holiday activity</span>
-            <div class="container">
+        <div class="container__row">
+            <span class="section-header">Discover holiday activity</span>
+            <div class="container margin-auto">
                 <div class="container__row">
-                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
-                        <img src="/img/activities/Sports.png" alt="step1">
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4" style="width:100%">
+                        <img class="min-height" src="/img/activities/Sports.png" alt="Sports">
                     </div>
-                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
-                        <img src="/img/activities/Wellness.png" alt="step2">
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4" style="width:100%">
+                        <img class="min-height" src="/img/activities/Wellness.png" alt="Wellness">
                     </div>
-                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
-                        <img src="/img/activities/Extreme.png" alt="step3">
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4" style="width:100%">
+                        <img class="min-height" src="/img/activities/Extreme.png" alt="Extreme">
                     </div>
                 </div>
-            </div>
-            <div class="container">
                 <div class="container__row">
-                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
-                        <img src="/img/activities/Games.png" alt="step1">
+                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4" style="width:100%">
+                        <img class="min-height" src="/img/activities/Games.png" alt="Games">
                     </div>
-                    <div class="container__col-sm-12 container__col-md-8 container__col-lg-8">
-                        <img src="/img/activities/Culture.png" alt="step3">
+                    <div class="container__col-12 container__col-md-8 container__col-lg-8">
+                        <img class="max-height content-img " src="/img/activities/Culture.png" alt="Culture">
                     </div>
                 </div>
-            </div>
-            <div class="container">
                 <div class="container__row">
-                    <div class="container__col-sm-12 container__col-md-8 container__col-lg-8">
-                        <img src="/img/activities/enjoymentRelaxation.png" alt="step1">
+                    <div class="container__col-12 container__col-md-8 container__col-lg-8 max-height">
+                        <img class="max-height content-img " src="/img/activities/enjoymentRelaxation.png"
+                            alt="enjoyment Relaxation">
                     </div>
-                    <div class="container__col-sm-12 container__col-md-4 container__col-lg-4">
-                        <img src="/img/activities/Traveling.png" alt="step3">
+                    <div class="container__col-12 container__col-md-4 container__col-lg-4">
+                        <img class="min-height" src="/img/activities/Traveling.png" alt="Traveling">
                     </div>
                 </div>
             </div>
         </div>
         <!--create holiday-->
-        <div class="flex-column holiday">
-            <span class="title">Create your holiday</span>
-            <span class="interest-text">Hi! What are your holiday interests?</span>
-            <div class="flex-row wrap search">
-                <div class="content-search">
-                    <input placeholder="Enter your interests" class="flex-grow input"></input>
-                    <button class="">Search partners</button>
+        <div class="container__row">
+            <span class="section-header">Create your holiday</span>
+            <div class="container__row flex-column holiday">
+                <span class="interest-text">Hi! What are your holiday interests?</span>
+                <div class="flex-row wrap search">
+                    <div class="content-search">
+                        <input placeholder="Enter your interests" class="flex-grow input"></input>
+                        <button class="flex-grow">Search partners</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <hr>
-    <footer class="flex-row wrap content">
-        <div class="column-1 flex-grow">
+    <footer class="container__row">
+        <div class="column-1 container__col-sm-12 container__col-md-3 container__col-lg-3">
             <span>DREAMSHARE</span>
         </div>
-        <div class="flex-column wrap flex-grow column-2">
-            <span class="f-title">Company</span>
-            <div class="flex-column" style="flex-wrap: wrap;">
-                <span>About</span>
-                <span>Contact</span>
-                <span>Press</span>
-                <span>Blog</span>
-                <span>Terms and Privacy</span>
-                <span>Help</span>
+        <div class="column-2 container__col-sm-12 container__col-md-3 container__col-lg-3">
+            <div class="flex-column">
+                <span class="f-title">Company</span>
+                <div class="flex-column wrap">
+                    <span>About</span>
+                    <span>Contact</span>
+                    <span>Press</span>
+                    <span>Blog</span>
+                    <span>Terms and Privacy</span>
+                    <span>Help</span>
+                </div>
             </div>
         </div>
-        <div class="flex-grow column-3">
+        <div class="column-3 container__col-sm-12 container__col-md-3 container__col-lg-3">
             <span class="f-title">Partners</span>
         </div>
-        <div class="flex-column flex-grow column-4">
-            <span>DESIGNED BY</span>
-            <img src="/img/main/areto.png" height="24" width="110" alt="ARETO" />
+        <div class="column-4 container__col-sm-12 container__col-md-3 container__col-lg-3">
+            <div class="flex-column">
+                <span>DESIGNED BY</span>
+                <img src="/img/main/areto.png" height="24" width="110" alt="ARETO" />
+            </div>
         </div>
     </footer>
-
     <script src="./scripts/app.js"></script>
 </body>
 

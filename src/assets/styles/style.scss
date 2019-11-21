@@ -19,7 +19,6 @@ $font-roboto: "Roboto";
 //screen sizes
 $grid__bp-md: 768;
 $grid__bp-sm: 576;
-$grid__bp-md: 768;
 $grid__bp-lg: 992;
 $grid__bp-xl: 1200;
 
@@ -27,159 +26,155 @@ $grid__bp-xl: 1200;
 $grid__cols: 12;
 
 $map-grid-props: (
-  '': 0,
-  '-sm': $grid__bp-sm,
-  '-md': $grid__bp-md,
-  '-lg': $grid__bp-lg,
-  '-xl': $grid__bp-xl
+  "": 0,
+  "-sm": $grid__bp-sm,
+  "-md": $grid__bp-md,
+  "-lg": $grid__bp-lg,
+  "-xl": $grid__bp-xl
 );
-
 body {
-  margin: 0px;
-
-  .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.45)), url("/img/backgroundBitmap.png") no-repeat top center;
-    background-size: cover;
-    height: 650px;
-    position: relative;
-    text-align: center;
-    margin-bottom: 68px;
+  margin: 0;
+  .container-header {
+    margin: auto;
   }
-  
+  .header-container {
+    width: 100%;
+    flex-wrap: wrap-reverse;
 
-  .banner {
-    position: relative;
-    text-align: center;
-    font-family: $font-montserrat;
-    font-weight: 700;
-    color: $color-white;
-
-    .siteName {
-      position: absolute;
-      top: 8px;
-      left: 15%;
+    .brand {
+      width: 100%;
+      font-family: $font-montserrat;
+      font-weight: 700;
+      color: $color-white;
+      font-size: 1em;
+      margin: 0;
     }
+
     .log-in {
-      position: absolute;
-      top: 8px;
-      right: 15%;
+      width: 100%;
       font-family: $font-montserrat;
       font-weight: 400;
-      align-content: space-between;
+
+      span {
+        cursor: pointer;
+        font-size: 0.75em;
+        align-self: center;
+        margin-right: 15px;
+      }
+
       .btn {
         background: transparent;
+        font-size: 0.75em;
         color: $color-white;
-        border-color: 1px solid;
-        border-radius: 10px;
-      }
-    }
-    .main-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      align-items: center;
-      span {
-        font-size: 40px;
-      }
-      .small-text {
-        font-family: $font-roboto;
-        font-weight: 300;
-        font-size: 16px;
-      }
-      button {
-        background: $color-light-red;
-        color: $color-white;
-        border-radius: 20px;
-        border-color: $color-light-red;
-        padding: 8px 15px;
-        width: fit-content;
-        font-weight: 700;
+        border: none;
+        border: 1px solid $color-white;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 8px 18px 8px 18px;
       }
     }
   }
+  .centered {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  .content {
-    margin: 0px 5px;
-    margin-left: 15%;
-    margin-right: 15%;
-
-    .steps {
-      margin: auto;
-      position: relative;
-
-      div {
-        position: absolute;
-        bottom: 8px;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        font-size: 15px;
-
-        button {
-          background: $color-light-red;
-          border-color: $color-light-red;
-          color: white;
-          border-radius: 20px;
-          width: fit-content;
-          font-weight: 200;
-        }
-        .step-header {
-          font-weight: 700;
-          font-size: 18px;
-          font-family: $font-montserrat;
-          color: $color-white;
-        }
-        .step-desc {
-          font-weight: 200;
-          font-size: 10px;
-          font-family: $font-montserrat;
-          color: $color-white;
-        }
-      }
+    h2 {
+      margin: 0;
+      font-size: 2.3em;
+      font-family: $font-montserrat;
+      font-weight: 700;
+      color: $color-white;
+    }
+    .small-text {
+      font-family: $font-montserrat;
+      font-weight: 300;
+      font-size: 1.0em;
+      color: $color-white;
+    }
+    button {
+      background: $color-light-red;
+      color: $color-white;
+      border: none;
+      border: 1px solid $color-light-red;
+      border-radius: 20px;
+      border-color: $color-light-red;
+      padding: 8px 15px;
+      margin: 20px auto;
+      width: fit-content;
+      font-weight: 700;
+      font-size: 0.9em;
     }
   }
 
-  .partners {
+  #step-container {
+    button {
+      background: $color-light-red;
+      border-color: $color-light-red;
+      color: white;
+      border-radius: 20px;
+      width: fit-content;
+      font-weight: 200;
+      margin: 15px;
+    }
+    .step-header {
+      font-weight: 700;
+      font-size: 1.25em;
+      font-family: $font-montserrat;
+      color: $color-white;
+      margin: 0px 15px;
+    }
+    .step-desc {
+      font-weight: 200;
+      font-family: $font-montserrat;
+      color: $color-white;
+      margin: 15px;
+      line-height: 15px;
+      font-size: 0.75em;
+    }
+  }
+
+  #partner-container {
     .partner-content {
-      max-width: 25%;
-      flex-grow: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
 
       .header-partner {
-        font-size: 16px;
+        font-size: 1em;
         color: $color-darker-grey;
         font-weight: 700;
         font-family: $font-montserrat;
+        margin: 10px 15px;
       }
       .desc-partner {
-        font-size: 16px;
+        font-size: 1em;
         color: $color-darker-grey;
         font-weight: 300;
         font-family: $font-montserrat;
+        text-align: center;
+        margin: 0px 15px;
       }
     }
-    .btn-partners {
-      background: transparent;
-      color: $color-light-red;
-      border-radius: 20px;
-      border-color: $color-light-red;
-      padding: 8px 15px;
-      width: fit-content;
-      font-weight: 700;
-      display: flex;
-      margin: auto;
-      margin-top: 15px;
-    }
+  }
+  .btn-partners {
+    background: transparent;
+    color: $color-light-red;
+    border-radius: 20px;
+    border-color: $color-light-red;
+    padding: 8px 35px;
+    width: fit-content;
+    font-weight: 700;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
   }
 
   .holiday {
-    margin-bottom: 10%;
-
-    .interest-text{
-      font-size: 16px;
+    .interest-text {
+      font-size: 1em;
       font-family: $font-roboto;
       color: $color-darker-grey;
       font-weight: 200;
@@ -191,22 +186,32 @@ body {
       justify-content: center;
 
       .content-search {
-        .input{
-          margin: 0px 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px 5px;
+        .input {
           border: none;
           border: solid 1px $color-very-light-grey;
           border-radius: 2px;
           padding: 8px;
           width: 300px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 5px auto;
         }
         button {
           background: $color-light-red;
           color: $color-white;
+          border: none;
+          border: 1px solid $color-light-red;
           border-radius: 20px;
           border-color: $color-light-red;
           padding: 8px 15px;
           width: fit-content;
           font-weight: 700;
+          margin: 5px auto;
         }
       }
     }
@@ -216,26 +221,89 @@ body {
     .column-1 {
       color: $color-light-red;
       font-family: $font-montserrat;
-      font-weight: 300;
+      font-weight: 200;
+      font-size: 1.5em;
+      height: 100%;
+      flex-grow: 1;
     }
     .column-2,
     .column-3 {
       color: $color-darker-grey;
       font-family: $font-montserrat;
       font-weight: 200;
-
+      height: 100%;
+      line-height: 25px;
+      flex-grow: 1;
+      width: 100%;
       .f-title {
         font-weight: 700;
       }
     }
     .column-4 {
+      flex-grow: 1;
+      width: 100%;
       align-items: flex-end;
       font-family: $font-montserrat;
-      font-size: 10px;
+      font-size: 0.625em;
       color: $color-brownish-grey;
+      height: 100%;
+      text-align: end;
     }
   }
 }
+.gradient {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.74), rgb(0, 0, 0));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.74), rgb(0, 0, 0));
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.74), rgb(0, 0, 0));
+  mix-blend-mode: overlay;
+}
+.content-centered {
+  justify-content: center;
+}
+.section-header {
+  font-family: $font-montserrat;
+  font-weight: 600;
+  font-size: 1.375em;
+  color: $color-darker-grey;
+  text-align: center;
+  width: 100%;
+  margin: 2% auto;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: $color-white;
+}
+
+.top {
+  position: absolute;
+  top: 10%;
+}
+.content-img {
+  width: 100%;
+}
+.min-height {
+  min-height: 300px;
+}
+.max-height {
+  max-height: 100%;
+}
+.margin-auto {
+  margin: auto;
+}
+.hero-sub-title {
+  font-family: $font-roboto;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 24.5px;
+  color: $color-white;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -261,15 +329,19 @@ body {
 hr {
   width: 100%;
   height: 1px;
+  margin: 40px 0px 20px 0px;
   background: $color-light-red;
   border-color: transparent;
 }
 .flex-grow {
   flex-grow: 1;
 }
+.max-width{
+  max-width:100%;
+}
 
 @mixin create-mq($breakpoint) {
-  @if($breakpoint == 0) {
+  @if ($breakpoint == 0) {
     @content;
   } @else {
     @media screen and (min-width: $breakpoint *1px) {
@@ -282,14 +354,13 @@ hr {
   @include create-mq($breakpoint) {
     @for $i from 1 through $grid-cols {
       &__col#{$modifier}-#{$i} {
-        flex-basis: (100 / ($grid-cols / $i) ) * 1%;
+        flex-basis: (100 / ($grid-cols / $i)) * 1%;
       }
     }
   }
 }
 
 .container {
-
   &--fluid {
     margin: 0;
     max-width: 100%;
@@ -301,7 +372,7 @@ hr {
     width: 100%;
   }
 
-  @each $modifier , $breakpoint in $map-grid-props {
+  @each $modifier, $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid__cols, $breakpoint);
   }
 }
@@ -310,7 +381,7 @@ hr {
   box-sizing: border-box;
 
   @at-root {
-    [class*='container__col-'] {
+    [class*="container__col-"] {
       &.higher {
         min-height: 60px;
       }
